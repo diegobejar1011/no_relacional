@@ -1,0 +1,58 @@
+###
+POST http://localhost:9000/api/ HTTP/1.1
+Content-Type: application/json 
+
+{
+    "id_entrega": 1, 
+    "id_producto": 1,
+    "id_lugar": 1,
+    "fecha": "2023-11-10",
+    "id_horario": 1,
+    "total": 50,
+    "deleted": "N",
+    "Deleted_at": null,
+    "Created_at": null,
+    "Update_at": null 
+}
+
+###
+GET http://localhost:9000/api/?page=1&limit=2 HTTP/1.1
+
+###
+GET http://localhost:9000/api/6542fad92b2128928905bbeb HTTP/1.1
+
+###
+PUT http://localhost:9000/api/update/6542fad92b2128928905bbeb HTTP/1.1
+Content-Type: application/json 
+
+{
+    "id_entrega": 1, 
+    "id_producto": 1,
+    "id_lugar": 1,
+    "fecha": "2023-11-10",
+    "id_horario": 1,
+    "total": 50,
+    "deleted": "N",
+    "Deleted_at": null,
+    "Created_at": null,
+    "Update_at": null 
+}
+
+###
+DELETE http://localhost:9000/api/delete/6542f85a5e853ebe3f918f6f HTTP/1.1
+
+###
+PATCH http://localhost:9000/api/parcialUpdate/6542fad92b2128928905bbeb HTTP/1.1
+
+{
+    "id_entrega": 1, 
+    "id_producto": 1,
+    "id_lugar": 1,
+    "fecha": "2023-11-10",
+    "id_horario": 1,
+    "total": 50,
+    "deleted": "N",
+    "Deleted_at": null,
+    "Created_at": null,
+    "Update_at": null 
+}
